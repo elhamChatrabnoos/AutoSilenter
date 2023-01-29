@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/duration_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/durationBox_title_txt"
+            android:gravity="center"
+            android:textSize="@dimen/text_size1"
+            android:textColor="@color/dark_color"
+            android:padding="10dp"
+            android:layout_margin="10dp" />
+
+    <me.sujanpoudel.wheelview.WheelView
+        android:id="@+id/wheelView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        app:wheelDividerStrokeWidth="6dp"
+        app:wheelArcBackgroundColor="#E4E2E6"
+        app:wheelSelectedArcBackgroundColor="@color/light_color"
+        app:wheelCenterIcon="@drawable/clock_icon"
+        app:wheelCenterIconPadding="10dp"
+        app:wheelCenterIconTint="@color/white"
+        app:wheelAnchorAngle="270"
+        app:wheelTextSize="10sp"
+        app:wheelTextColor="@color/black"
+        app:wheelAnimationDuration="800"
+        app:wheelMode="ANIMATE_TO_ANCHOR" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layoutDirection="rtl"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/confirm_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_txt"
+                android:textSize="@dimen/little_txt"
+                android:textColor="@color/dark_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

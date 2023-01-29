@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:background="@drawable/event_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/reMainLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/re_event_name"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_margin"
+                android:text="@string/re_event_name"
+                android:textColor="@color/text_color"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/leftGuide"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/re_event_switcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_margin"
+                app:layout_constraintEnd_toEndOf="@id/leftGuide" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                style="@style/rows_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/from_hour"-->
+<!--                    style="@style/event_item_style"-->
+<!--                    android:text="" />-->
+
+                <TextView
+                    android:id="@+id/re_start_time"
+                    style="@style/event_item_style"
+                    android:text="@string/event_start_time"
+                    app:layout_constraintStart_toEndOf="@+id/from_hour"
+                    app:layout_constraintTop_toBottomOf="@+id/re_event_name" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secondLayout"
+                style="@style/rows_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstLayout">
+
+<!--                <TextView-->
+<!--                    android:id="@+id/till_hour"-->
+<!--                    style="@style/event_item_style"-->
+<!--                    android:text=""-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/re_start_time" />-->
+
+                <TextView
+                    android:id="@+id/re_end_time"
+                    style="@style/event_item_style"
+                    android:text="@string/event_end_time"
+                    app:layout_constraintStart_toEndOf="@+id/till_hour"
+                    app:layout_constraintTop_toBottomOf="@+id/re_start_time" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thirdLayout"
+                style="@style/rows_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/secondLayout">
+
+                <TextView
+                    android:id="@+id/re_start_date"
+                    style="@style/event_item_style"
+                    android:text="@string/re_start_date"
+                    app:layout_constraintStart_toEndOf="@+id/re_start_date_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/re_end_time" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/forthLayout"
+                style="@style/rows_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/thirdLayout">
+
+                <TextView
+                    android:id="@+id/re_end_date"
+                    style="@style/event_item_style"
+                    android:text="@string/re_end_time"
+                    app:layout_constraintStart_toEndOf="@+id/re_end_date_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/re_start_date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/daysLayout"
+                style="@style/rows_style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/forthLayout">
+
+                <TextView
+                    android:id="@+id/re_days_of_week"
+                    style="@style/event_item_style"
+                    android:text="@string/days_of_week_txt"
+                    app:layout_constraintStart_toEndOf="@+id/re_days_txt"
+                    app:layout_constraintTop_toBottomOf="@+id/re_end_date" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deleteImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="@+id/middleGuide"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/delete_icon"
+                android:layout_marginTop="@dimen/normal_margin"
+                android:layout_marginStart="3dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/middleGuide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.77" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

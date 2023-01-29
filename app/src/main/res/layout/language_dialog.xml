@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/layout_style"
+    android:layout_marginBottom="@dimen/normal_margin">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:textSize="@dimen/big_margin"
+        android:gravity="center"
+        android:text="@string/language_dialog_title" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/firstRadio"
+            android:text="@string/setting_persian"
+            style="@style/language_radio_style"
+            android:checked="true"
+           />
+
+        <RadioButton
+            android:id="@+id/secondRadio"
+            android:layout_width="wrap_content"
+            style="@style/language_radio_style"
+            android:text="@string/setting_english" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

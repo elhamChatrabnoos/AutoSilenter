@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size1">15sp</dimen>
+    <dimen name="little_txt">15sp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">100dp</dimen>
+    <dimen name="normal_txt_size">15sp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="big_margin">20sp</dimen>
+    <dimen name="big_txt">20sp</dimen>
+    <dimen name="menu_img_size">20dp</dimen>
+    <dimen name="inputText_size">13sp</dimen>
+    <dimen name="days_txt_width">90dp</dimen>
+    <dimen name="days_txt_size">13sp</dimen>
+    <dimen name="re_little_txt_size">10sp</dimen>
+    <dimen name="normal_txt_size2">10sp</dimen>
+    <dimen name="veryBig_margin">30dp</dimen>
+    <dimen name="textSize_normal2">10sp</dimen>
+</resources>

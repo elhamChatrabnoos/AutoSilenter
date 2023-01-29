@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008553361739",
+    "project_id": "autosilenter-c6398",
+    "storage_bucket": "autosilenter-c6398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008553361739:android:08ce39545403002ffc68ce",
+        "android_client_info": {
+          "package_name": "com.android.silent.autosilenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008553361739-hov515be98f98nphm3qqufmccnif4ocm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFxa8B-SRav3NwXdXOd3WiCwPTAdd7hUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008553361739-hov515be98f98nphm3qqufmccnif4ocm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
